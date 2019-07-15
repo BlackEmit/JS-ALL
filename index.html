@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .modal {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.548);
+    }
+
+    .modal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        visibility: hidden;
+    }
+
+    .modal-content {
+        padding: 200px 150px;
+        background: rgb(245, 245, 239);
+    }
+</style>
+<body>
+    <p>Enter you name (Cannot contain digits)</p>
+    <input type="text" id="input-name"><br><br>
+
+    <button class="modal-open">Show modal</button>
+    <div class="modal">
+        <div class="modal-content">
+            <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam aspernatur, unde facilis sit optio quo provident.<br> Cum ullam fugiat deleniti, nesciunt, molestias mollitia inventore consequuntur illum, quidem earum fuga eveniet.</h3>
+            <button class="modal-close">Close</button>
+        </div>
+    </div>
+
+    <script src="tools.js"></script>
+    <script src="./events.js"></script>
+</body>
+</html>
